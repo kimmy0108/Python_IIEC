@@ -9,15 +9,15 @@ def fun(a):
 		b = a/(a-3)
 
 	# throws NameError if a >= 4
-	print("Value of b = ", b)
+	print("Value of b => ", b)
 	
 try:
-	fun(3)
-	fun(5)
+	fun(7)
+	fun(9)
 
 # note that braces () are necessary here for
 # multiple exceptions
 except ZeroDivisionError:
-	print("ZeroDivisionError Occurred and Handled")
+	print("Zero Division Error Occurred and Handled Gracefully")
 except NameError:
-	print("NameError Occurred and Handled")
+	print("Name Error Occurred and Handled Correctly")
